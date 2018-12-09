@@ -1,0 +1,13 @@
+server:
+  port: 9002
+eureka:
+  client:
+    service-url:
+      defaultZone:  http://localhost:8761/eureka/
+spring:
+  application:
+    name: service-fegin
+ #--- ¿ªÆôÈÛ¶ÏÆ÷hystrix
+feign:
+  hystrix:
+    enabled: true
